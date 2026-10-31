@@ -43,6 +43,7 @@
   addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(onScroll);} },{passive:true});
   onScroll();
 
+  if($('#range')){
   /* range selector */
   var V=[
     {t:'milk',tag:'MILK',n:'Milk Chocolate',bn:'মিল্ক চকলেট',d:'Cream panel, caramel ring. Smooth and gentle, the one that welcomes everyone.',img:'assets/pack-milk.webp',alt:'Milk chocolate bar'},
@@ -73,6 +74,8 @@
       img.style.transform='rotateY('+(x*24)+'deg) rotateX('+(-y*18)+'deg)';
     });
     stage.addEventListener('mouseleave',function(){ img.style.transform=''; });
+  }
+
   }
 
   /* floating cocoa nibs / gold dust */
