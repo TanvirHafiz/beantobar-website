@@ -231,3 +231,14 @@ footer{background:var(--night);border-top:1px solid rgba(200,164,110,.25);paddin
 .final-sm{padding:110px 0;background:#140c07}
 .final-sm .final-in h2{margin-bottom:1.4rem}
 @media(max-width:900px){.qa-body{padding-left:4px}.qa summary{gap:14px}.qn{min-width:1.8rem}}
+
+/* faq: questions vs answers */
+.qa .qt{font-family:'Playfair Display',serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);font-size:clamp(1.05rem,2.3vw,1.4rem);line-height:1.25}
+.qa[open] .qt{color:#e0bd86}
+.qa-body{font-family:'Montserrat',sans-serif;font-weight:400;font-size:1rem;line-height:1.75;color:var(--cream);margin:0 4px 34px 66px;padding:2px 0 2px 24px;border-left:2px solid var(--caramel)}
+.qa-body p{color:var(--cream);opacity:.92}
+.qa-body b{color:var(--cream);font-weight:600}
+.plain li,.places li{color:var(--cream)}
+.prow:not(.phead) span:not(:first-child){font-family:'Montserrat',sans-serif;font-weight:600;font-size:1rem;color:var(--cream)}
+.prow span:first-child{color:rgba(233,232,219,.92)}
+@media(max-width:900px){.qa-body{margin-left:4px}}
