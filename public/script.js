@@ -45,10 +45,10 @@
 
   /* range selector */
   var V=[
-    {t:'milk',tag:'MILK',n:'Milk Chocolate',bn:'মিল্ক চকলেট',d:'Cream panel, caramel ring. Smooth and gentle, the one that welcomes everyone.',img:'assets/pack-milk.webp',alt:'Milk chocolate bar, 85 g'},
-    {t:'dark',tag:'DARK',n:'Dark Chocolate',bn:'ডার্ক চকলেট',d:'Cocoa panel, deep ring. Rich and full, made for those who love the real thing.',img:'assets/pack-dark.webp',alt:'Dark chocolate bar, 85 g'},
-    {t:'dark90',tag:'90% DARK',n:'90% Dark Chocolate',bn:'ডার্ক চকলেট ৯০%',d:'Cocoa black panel. The most intense bar in the range, pure and uncompromising.',img:'assets/pack-dark90.webp',alt:'90 percent dark chocolate bar, 85 g'},
-    {t:'white',tag:'WHITE',n:'White Chocolate',bn:'হোয়াইট চকলেট',d:'White panel, ivory ring. Creamy, soft and quietly indulgent.',img:'assets/pack-white.webp',alt:'White chocolate bar, 85 g'}
+    {t:'milk',tag:'MILK',n:'Milk Chocolate',bn:'মিল্ক চকলেট',d:'Cream panel, caramel ring. Smooth and gentle, the one that welcomes everyone.',img:'assets/pack-milk.webp',alt:'Milk chocolate bar'},
+    {t:'dark',tag:'DARK',n:'Dark Chocolate',bn:'ডার্ক চকলেট',d:'Cocoa panel, deep ring. Rich and full, made for those who love the real thing.',img:'assets/pack-dark.webp',alt:'Dark chocolate bar'},
+    {t:'dark90',tag:'90% DARK',n:'90% Dark Chocolate',bn:'ডার্ক চকলেট ৯০%',d:'Cocoa black panel. The most intense bar in the range, pure and uncompromising.',img:'assets/pack-dark90.webp',alt:'90 percent dark chocolate bar'},
+    {t:'white',tag:'WHITE',n:'White Chocolate',bn:'হোয়াইট চকলেট',d:'White panel, ivory ring. Creamy, soft and quietly indulgent.',img:'assets/pack-white.webp',alt:'White chocolate bar'}
   ];
   var cur=0, range=$('#range'), img=$('#packImg'), info=$('#info'), chips=$$('#chips button');
   function show(i){
