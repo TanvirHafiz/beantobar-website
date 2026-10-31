@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bean to Bar Chocolate | Bangladesh's first bean to bar chocolate</title>
+<meta name="description" content="Made in Bangladesh. Made for the world. Bean to Bar makes chocolate from the cacao bean to the finished bar. Milk, dark, 90% dark and white.">
+<meta property="og:title" content="Bean to Bar Chocolate">
+<meta property="og:description" content="Bangladesh's first bean to bar chocolate. Rich. Smooth. Unforgettable.">
+<meta property="og:image" content="assets/cacao-overhead.webp">
+<meta name="theme-color" content="#0D0805">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind+Siliguri:wght@400;500;600&family=Montserrat:wght@400;500;600;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+<canvas id="nibs" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Bean to Bar Chocolate">
+    <img src="assets/logo.png" alt="" width="44" height="44">
+    <span>BEAN TO BAR</span>
+  </a>
+  <nav>
+    <a href="#story">Story</a>
+    <a href="#range">The range</a>
+    <a href="#craft">Craft</a>
+    <a href="#promise">Promise</a>
+    <a class="btn btn-sm" href="https://3achocolate.com/order">Order now</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" data-parallax="0.25" style="background-image:url(assets/cacao-overhead.webp)"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">BANGLADESH'S FIRST BEAN TO BAR CHOCOLATE</p>
+      <p class="script reveal" style="--d:.1s">The first</p>
+      <h1 class="split" aria-label="Rich. Smooth. Unforgettable.">
+        <span class="line"><span>Rich.</span></span>
+        <span class="line"><span>Smooth.</span></span>
+        <span class="line"><span>Unforgettable.</span></span>
+      </h1>
+      <p class="lede reveal" style="--d:.9s">Made in Bangladesh. Made for the world. Chocolate from the cacao bean to the finished bar, by hand, in small batches.</p>
+      <div class="cta reveal" style="--d:1.1s">
+        <a class="btn" href="https://3achocolate.com/order">Order now</a>
+        <a class="btn btn-ghost" href="#range">Meet the range</a>
+      </div>
+    </div>
+    <div class="hero-packs" aria-hidden="true">
+      <img class="hp hp1" src="assets/pack-dark.webp" alt="" data-parallax="-0.12">
+      <img class="hp hp2" src="assets/pack-dark90.webp" alt="" data-parallax="-0.2">
+      <img class="hp hp3" src="assets/pack-milk.webp" alt="" data-parallax="-0.05">
+    </div>
+  </div>
+  <a class="scroll-cue" href="#story" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Rich. Smooth. Unforgettable.</span><i></i><span>Pure. Authentic. Exceptional.</span><i></i><span>From our hands to yours.</span><i></i><span>Be proud. Choose local.</span><i></i>
+    <span>Rich. Smooth. Unforgettable.</span><i></i><span>Pure. Authentic. Exceptional.</span><i></i><span>From our hands to yours.</span><i></i><span>Be proud. Choose local.</span><i></i>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap">
+    <p class="eyebrow reveal">THE BRAND</p>
+    <h2 class="reveal">Made in Bangladesh.<br>Made for the world.</h2>
+    <p class="body reveal">Bean to Bar (বিন টু বার) makes chocolate from the cacao bean to the finished bar, here in Bangladesh. Every story starts with where it is made.</p>
+
+    <div class="stats">
+      <div class="stat reveal"><b data-count="85">0</b><small>g</small><span>One bar size across the range</span></div>
+      <div class="stat reveal" style="--d:.1s"><b data-count="4">0</b><span>Bases: milk, dark, 90% dark, white</span></div>
+      <div class="stat reveal" style="--d:.2s"><b data-count="1">0</b><span>Country of origin: Bangladesh</span></div>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar reveal" style="background-image:url(assets/pillar-origin.webp)">
+        <div class="pin"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30"/><path d="M32 14c-9 5-12 15-8 24 3 6 8 9 8 12 0-3 5-6 8-12 4-9 1-19-8-24z"/><path d="M32 18v30"/></svg>
+        <h3>Origin</h3>
+        <p>Proudly Bangladeshi. Real chocolate, real story, real Bangladesh.</p></div>
+      </article>
+      <article class="pillar reveal" style="--d:.12s;background-image:url(assets/pillar-craft.webp)">
+        <div class="pin"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30"/><path d="M20 38c0-8 5-14 12-14s12 6 12 14"/><path d="M22 38h20l-2 8H24z"/><path d="M28 18c0-3 4-3 4-6M36 18c0-3 4-3 4-6"/></svg>
+        <h3>Craft</h3>
+        <p>Bean to bar, small batch, by hand. We show the process, not the factory.</p></div>
+      </article>
+      <article class="pillar reveal" style="--d:.24s;background-image:url(assets/pillar-indulgence.webp)">
+        <div class="pin"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30"/><path d="M20 20h24v24H20z"/><path d="M20 28h24M20 36h24M28 20v24M36 20v24"/></svg>
+        <h3>Indulgence</h3>
+        <p>Rich. Smooth. Unforgettable. Premium without being distant.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RANGE -->
+<section class="range" id="range" data-theme="milk">
+  <div class="wrap">
+    <p class="eyebrow reveal">THE RANGE</p>
+    <h2 class="reveal">Every bar has<br>its own colour</h2>
+  </div>
+  <div class="stage">
+    <button class="arrow prev" aria-label="Previous bar">&#8592;</button>
+    <div class="pack-stage" id="packStage">
+      <div class="halo"></div>
+      <img id="packImg" src="assets/pack-milk.webp" alt="Milk chocolate bar, 85 g">
+    </div>
+    <button class="arrow next" aria-label="Next bar">&#8594;</button>
+    <div class="info" id="info">
+      <p class="tag" id="vTag">MILK</p>
+      <h3 id="vName">Milk Chocolate</h3>
+      <p class="bn" id="vBn">মিল্ক চকলেট</p>
+      <p id="vDesc">Cream panel, caramel ring. Smooth and gentle, the one that welcomes everyone.</p>
+      <p class="net">Net weight 85 g</p>
+      <a class="btn" href="https://3achocolate.com/order">Order this bar</a>
+    </div>
+  </div>
+  <div class="chips" id="chips" role="tablist" aria-label="Choose a bar">
+    <button role="tab" data-i="0" class="on"><i style="--c:#E9E8DB"></i>Milk</button>
+    <button role="tab" data-i="1"><i style="--c:#3D2216"></i>Dark</button>
+    <button role="tab" data-i="2"><i style="--c:#040707"></i>90% Dark</button>
+    <button role="tab" data-i="3"><i style="--c:#fff"></i>White</button>
+  </div>
+</section>
+
+<!-- MOMENTS -->
+<section class="moments">
+  <div class="wrap center">
+    <p class="eyebrow reveal">IN THE LIGHT</p>
+    <h2 class="reveal">Warm. Natural.<br>Overhead cacao.</h2>
+  </div>
+  <div class="mgrid">
+    <figure data-parallax="0.06"><img src="assets/beauty-dark.webp" alt="Dark chocolate pack on a dark marble surface with cacao pods and chocolate pieces" loading="lazy"></figure>
+    <figure data-parallax="-0.06"><img src="assets/beauty-milk.webp" alt="Milk chocolate pack on marble with cocoa powder and melting chocolate" loading="lazy"></figure>
+    <figure data-parallax="0.06"><img src="assets/beauty-90.webp" alt="90 percent dark chocolate pack with drifting cocoa dust" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- CRAFT -->
+<section class="craft" id="craft">
+  <div class="craft-img" data-parallax="0.12"><img src="assets/duo-wood.webp" alt="Milk and dark Bean to Bar packs in warm window light on wood" loading="lazy"></div>
+  <div class="craft-copy">
+    <p class="eyebrow reveal">THE CRAFT</p>
+    <h2 class="reveal">From bean<br>to bar</h2>
+    <ol class="steps">
+      <li class="reveal"><span>01</span><div><b>The bean</b><p>Cacao, where it all begins.</p></div></li>
+      <li class="reveal" style="--d:.1s"><span>02</span><div><b>The making</b><p>Small batch, by hand, with patience.</p></div></li>
+      <li class="reveal" style="--d:.2s"><span>03</span><div><b>The bar</b><p>85 g of rich, smooth chocolate.</p></div></li>
+      <li class="reveal" style="--d:.3s"><span>04</span><div><b>Your hands</b><p>From our hands to yours.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise" id="promise">
+  <div class="wrap">
+    <p class="eyebrow reveal">OUR PROMISE</p>
+    <h2 class="reveal">Pure. Authentic. Exceptional.</h2>
+    <div class="claims">
+      <div class="claim reveal"><div class="ring"><svg viewBox="0 0 40 40"><path d="M20 8c-6 3-8 10-5 16 2 4 5 6 5 8 0-2 3-4 5-8 3-6 1-13-5-16z"/></svg></div><h4>BEAN TO BAR</h4><p>Crafted from the finest cacao beans. From our hands to yours.</p></div>
+      <div class="claim reveal" style="--d:.1s"><div class="ring"><svg viewBox="0 0 40 40"><path d="M20 9l3.4 7 7.6 1-5.6 5.3 1.4 7.7L20 26.300 13.200 30l1.400-7.700L9 17l7.600-1z"/></svg></div><h4>PREMIUM QUALITY</h4><p>Made with the finest ingredients for a rich, smooth and indulgent taste.</p></div>
+      <div class="claim reveal" style="--d:.2s"><div class="ring"><svg viewBox="0 0 40 40"><path d="M12 28c0-9 6-15 16-16-1 10-7 16-16 16z"/><path d="M12 28c4-5 8-8 12-10"/></svg></div><h4>ETHICALLY SOURCED</h4><p>Responsibly sourced. Sustainably crafted. Honestly made.</p></div>
+      <div class="claim reveal" style="--d:.3s"><div class="ring"><svg viewBox="0 0 40 40"><path d="M10 28V14l5 4 5-8 5 8 5-4v14z"/></svg></div><h4>PROUDLY BANGLADESHI</h4><p>Real chocolate. Real story. Real Bangladesh.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final-bg" data-parallax="0.15" style="background-image:url(assets/cacao-cover.webp)"></div>
+  <div class="final-shade"></div>
+  <div class="wrap center final-in">
+    <div class="disc big reveal"><img src="assets/logo.png" alt="Bean to Bar Chocolate badge"></div>
+    <h2 class="reveal">Be proud.<br>Choose local.</h2>
+    <p class="body reveal">Bangladesh's first bean to bar chocolate, delivered to your door.</p>
+    <a class="btn btn-lg reveal" href="https://3achocolate.com/order">Order now</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><img src="assets/logo.png" alt="" width="56" height="56"><p>BEAN TO BAR. MADE WITH PASSION.</p></div>
+    <p class="small">Made in Bangladesh. Made for the world.<br><a href="https://3achocolate.com">3achocolate.com</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
