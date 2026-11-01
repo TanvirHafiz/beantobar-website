@@ -242,3 +242,9 @@ footer{background:var(--night);border-top:1px solid rgba(200,164,110,.25);paddin
 .prow:not(.phead) span:not(:first-child){font-family:'Montserrat',sans-serif;font-weight:600;font-size:1rem;color:var(--cream)}
 .prow span:first-child{color:rgba(233,232,219,.92)}
 @media(max-width:900px){.qa-body{margin-left:4px}}
+
+/* depth for the 90% dark pack on its near-black panel */
+.pack-stage::before{content:"";position:absolute;width:660px;height:780px;max-width:100%;border-radius:50%;background:radial-gradient(closest-side,rgba(165,167,171,.8),rgba(110,112,116,.5) 52%,transparent 100%);opacity:0;transform:scale(.85);transition:opacity .8s var(--ease),transform .8s var(--ease);pointer-events:none;z-index:1}
+.range[data-theme=dark90] .pack-stage::before{opacity:1;transform:none}
+.range[data-theme=dark90] .pack-stage img{box-shadow:0 0 0 1px rgba(255,255,255,.22),0 36px 60px rgba(0,0,0,.8),0 0 80px rgba(170,172,176,.38)}
+.range[data-theme=dark90] .halo{border-color:rgba(200,200,200,.35);opacity:.7}
