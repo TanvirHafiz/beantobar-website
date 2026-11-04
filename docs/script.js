@@ -96,4 +96,51 @@
       requestAnimationFrame(loop);
     })();
   }
+
+  /* game window */
+  (function(){
+    var links = $$('[data-game]');
+    if(!links.length) return;
+    var url = links[0].getAttribute('href');
+    var m = document.createElement('div');
+    m.className = 'gamewin';
+    m.setAttribute('role','dialog');
+    m.setAttribute('aria-modal','true');
+    m.setAttribute('aria-label',"Dadu's Notebook game");
+    m.hidden = true;
+    m.innerHTML = '<div class="gw-box">'+
+      '<div class="gw-bar"><span class="gw-title">DADU\u2019S NOTEBOOK</span>'+
+      '<a class="gw-full" href="'+url+'" target="_blank" rel="noopener">Open in new tab</a>'+
+      '<button type="button" class="gw-x" aria-label="Close game">&times;</button></div>'+
+      '<div class="gw-body"><div class="gw-load">Loading the notebook...</div></div></div>';
+    document.body.appendChild(m);
+    var body = $('.gw-body',m), closeBtn = $('.gw-x',m), last = null;
+    function open(e){
+      if(e) e.preventDefault();
+      last = document.activeElement;
+      if(!$('iframe',body)){
+        var f = document.createElement('iframe');
+        f.src = url; f.title = "Dadu's Notebook";
+        f.allow = 'fullscreen; autoplay; gamepad';
+        f.setAttribute('allowfullscreen','');
+        body.appendChild(f);
+      }
+      m.hidden = false;
+      document.documentElement.classList.add('gw-open');
+      requestAnimationFrame(function(){m.classList.add('on');closeBtn.focus()});
+    }
+    function close(){
+      m.classList.remove('on');
+      document.documentElement.classList.remove('gw-open');
+      setTimeout(function(){
+        m.hidden = true;
+        var f = $('iframe',body); if(f) f.remove(); /* stops game audio */
+      },300);
+      if(last && last.focus) last.focus();
+    }
+    links.forEach(function(a){a.addEventListener('click',open)});
+    closeBtn.addEventListener('click',close);
+    m.addEventListener('click',function(e){if(e.target===m)close()});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)close()});
+  })();
 })();

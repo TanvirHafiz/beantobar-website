@@ -248,3 +248,21 @@ footer{background:var(--night);border-top:1px solid rgba(200,164,110,.25);paddin
 .range[data-theme=dark90] .pack-stage::before{opacity:1;transform:none}
 .range[data-theme=dark90] .pack-stage img{box-shadow:0 0 0 1px rgba(255,255,255,.22),0 36px 60px rgba(0,0,0,.8),0 0 80px rgba(170,172,176,.38)}
 .range[data-theme=dark90] .halo{border-color:rgba(200,200,200,.35);opacity:.7}
+
+/* game window */
+.gamewin{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:3vh 3vw;background:rgba(4,7,7,.78);backdrop-filter:blur(6px);opacity:0;transition:opacity .3s}
+.gamewin[hidden]{display:none}
+.gamewin.on{opacity:1}
+.gw-box{width:min(1180px,100%);height:min(820px,100%);display:flex;flex-direction:column;background:var(--night,#0D0805);border:1px solid rgba(200,164,110,.45);border-radius:10px;box-shadow:0 40px 100px rgba(0,0,0,.7);overflow:hidden;transform:translateY(18px) scale(.97);transition:transform .4s var(--ease)}
+.gamewin.on .gw-box{transform:none}
+.gw-bar{display:flex;align-items:center;gap:16px;padding:10px 14px 10px 20px;background:var(--cocoa-deep,#321A11);border-bottom:1px solid rgba(200,164,110,.3)}
+.gw-title{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:.14em;font-size:.85rem;color:var(--gold);margin-right:auto}
+.gw-full{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);opacity:.75}
+.gw-full:hover{opacity:1;color:var(--gold)}
+.gw-x{background:none;border:1px solid rgba(200,164,110,.45);color:var(--cream);width:34px;height:34px;border-radius:50%;font-size:1.4rem;line-height:1;cursor:pointer;transition:background .3s,color .3s}
+.gw-x:hover,.gw-x:focus-visible{background:var(--caramel);color:#fff;outline:none}
+.gw-body{position:relative;flex:1;background:#000}
+.gw-body iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.gw-load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+html.gw-open{overflow:hidden}
+@media(max-width:900px){.gamewin{padding:0}.gw-box{border-radius:0;border:0;height:100%}}
